@@ -17,9 +17,9 @@
   },
   "scripts": {
     "start": "node server.js",
-    "dev": "webpack && cpy && npm start",
     "cpy": "cp src/index.html dist/index.html",
-    "watch": "webpack --watch && cpy",
+    "dev": "webpack && npm start",
+    "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
