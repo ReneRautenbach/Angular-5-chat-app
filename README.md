@@ -1,8 +1,8 @@
-# Javascript-chat-app
+# Javascript chat app ith rooms
 
 # About
 
-This app allows a user to sign in and enter a chat room.
+This is a demo app that allows a user to sign in and enter a chat room.  
 
 
 # Uses
@@ -15,11 +15,9 @@ This app allows a user to sign in and enter a chat room.
 
 # Official Documentation
 
-Documentation for the API can be found [here](https://github.com/ReneRautenbach/chat-app/wiki).  
+Documentation for the app can be found [here](https://github.com/ReneRautenbach/chat-app/wiki).  
 
-# Issues
 
-If you experience any issues, please send an e-mail to Rene Rautenbach at [rene@clickasite.co.za](mailto:rene@clickasite.co.za).
  
  
 
