@@ -7,15 +7,15 @@ This app allows a user to sign in and enter a chat room.
 
 # Uses
 
- * Websockets
- * Express
- * 
- 
+ * HTML5 Websockets
+ * [Express](https://github.com/expressjs/express)
+ * [Babel](https://github.com/babel/babel-loader)
+ * [Websocket/ws](https://github.com/websockets/ws) 
  
 
 # Official Documentation
 
-Documentation for the API can be found [here](https://github.com/ReneRautenbach/Lumen-RESTfulAPI/wiki).  
+Documentation for the API can be found [here](https://github.com/ReneRautenbach/chat-app/wiki).  
 
 # Issues
 
