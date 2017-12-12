@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial';
+    font-size: 13px;
+}
+
+#connecting {
+    text-align:center; 
+    width:100%;
+    margin:0 auto;
+}
+
+#page-wrapper{
+    text-align:center;  
+    width:100%;
+    min-height: 300px; 
+}
+
+#error_msg{
+    color: red;
+    padding:5px;
+}
+
+#handle {
+    width: 350px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+#btnConnect, #setHandle, #btnSay, #btnExitRoom { 
+    font-weight:bold;
+    height:32px;
+    padding:6px 12px;
+}
+#btnSay {
+    height:48px;
+}
+#chatText {
+    width: 65%;
+    height:32px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    background-color: #f5f5f5;
+    padding:6px 12px;
+}
+#chat_rooms > li > a {
+    font-size: 16px;
+    color: #3498db;
+}
+#chat_rooms > li {
+    padding: 6px 12px;
+    list-style: none;
+}
+#notifications{
+    text-align: left;
+    font-size: 12px;
+    color: red;
+    line-height: 16px;
+}
+#chat_wrapper {
+    text-align: center;
+    width: 80%;
+    min-height: 400px;
+    background-color: #f2f2f2;
+    border: 1px solid #999999;
+    margin: 10px auto;
+    padding: 10px 15px;
+}
+#chat_area {
+    text-align: left;
+    line-height: 16px;
+    padding: 2px 0;
+
+}
+#chat_area > div > span {
+    font-weight: bold;
+}
+.loader {
+    border: 12px solid #f3f3f3; /* Light grey */
+    border-top: 12px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    margin:0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

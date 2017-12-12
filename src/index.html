@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Talk2Me</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div id="page-wrapper">
+
+        <div>
+            <h1>Talk2Me</h1>
+
+            <div id="app"></div>
+            
+            <div id="connecting" class="screen">
+                <h1>Connecting...</h1>
+                <div class="loader"></div>
+            </div>
+
+
+            <div id="disconnected" class="screen">
+                <h1>Disconnected from server.</h1>
+                <button type="button" name="connect" id="btnToLogin">Connect</button>
+            </div>
+
+
+            <div id="loggedOut" class="screen">
+                <h2>Enter you name to start chatting.</h2>
+                <input type="text" name="handle" id="handle" value="Rene">
+                <button type="button" name="btnConnect" id="btnConnect">Connect</button>
+            </div>
+
+
+            <div id="selectRoom" class="screen">
+                <div>
+                    <h2>Hi
+                        <span id="name"></span>, please select a chat room: </h2>
+                </div>
+                <ul id="chat_rooms">
+                </ul>
+                
+                <button type="button" name="btnDisconnect" id="btnDisconnect">Disconnect</button>
+            </div>
+
+
+            <div id="inRoom" class="screen">
+                <h2 id="roomName"></h2>
+                <input id="chatText" placeholder="Enter Message"></input>
+                <button type="button" class="btn" name="btnSay" id="btnSay">Submit</button>
+                <div id="chat_wrapper">
+
+                    <div id="chat_area">
+                    
+                    </div>
+                </div>
+                
+                <button type="button" name="btnExitRoom" id="btnExitRoom">EXIT ROOM</button>
+            </div>
+        </div> 
+        
+    </div>
+    <div id="notifications" title="Error!"></div>     
+    
+    <script src="bundle.js"></script>
+</body>
+
+</html>
