@@ -1,9 +1,7 @@
-const express = require('express');
-const session = require('express-session');
+const express = require('express'); 
 const http = require('http');
 const url = require('url');
-const websocket = require(__dirname + '/websocket')
-const uuid = require('uuid');
+const websocket = require(__dirname + '/websocket') 
 const path = require('path');
 
 const DIST_DIR = path.join(__dirname,'dist');
