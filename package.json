@@ -25,7 +25,7 @@
     "w_cp": "mkdir public\\css && copy src\\index.html public\\index.html && copy src\\css\\styles.css public\\css\\styles.css",
     "dev": "webpack && npm run start",
     "watch": "webpack --watch",
-    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
+    "heroku-postbuild": "webpack"
   },
   "author": "Rene Rautenbach",
   "license": "ISC"
