@@ -79,5 +79,5 @@ class SocketClient {
         this.ws.send(JSON.stringify({ 'type': 'ROOMS' }));
     }
 }
-
-export let wsc = new SocketClient('ws://localhost:3000');
+var HOST = location.origin.replace(/^http/, 'ws')  
+export let wsc = new SocketClient(HOST);
