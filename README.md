@@ -1,4 +1,4 @@
-# Javascript chat app ith rooms
+# Javascript chat app with chat rooms
 
 # About
 
