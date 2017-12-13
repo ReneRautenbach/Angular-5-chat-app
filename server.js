@@ -2,15 +2,13 @@ const express = require('express');
 const http = require('http');
 const url = require('url');
 const websocket = require(__dirname + '/websocket') 
-const path = require('path');
-import compression from 'compression';
+const path = require('path'); 
 
 const DIST_DIR = path.join(__dirname,'public');
 const PORT = process.env.PORT || 5000
 const app = express();
     
-app.use(express.static(DIST_DIR)) 
-app.use(compression());   
+app.use(express.static(DIST_DIR))  
  
 app.get('/', function(req, res) { 
   res.sendFile (path.join(DIST_DIR, "index.html"));
