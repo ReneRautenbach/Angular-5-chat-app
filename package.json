@@ -7,6 +7,10 @@
     "express": "^4.16.2",
     "ws": "^3.3.2"
   },
+  "engines": {
+    "npm": "5.2.0",
+    "node": "6.11.4"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -20,7 +24,8 @@
     "l_cp": "mkdir public\\css && cp src\\index.html public\\index.html && cp src\\css\\styles.css public\\css\\styles.css",
     "w_cp": "mkdir public\\css && copy src\\index.html public\\index.html && copy src\\css\\styles.css public\\css\\styles.css",
     "dev": "webpack && npm run start",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
   },
   "author": "Rene Rautenbach",
   "license": "ISC"
