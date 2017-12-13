@@ -17,10 +17,10 @@
   },
   "scripts": {
     "start": "node server.js",
-    "cpy": "cp src/index.html dist/index.html",
-    "dev": "webpack && npm start",
-    "watch": "webpack --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "l_cp": "mkdir dist\\css && cp src\\index.html dist\\index.html && cp src\\css\\styles.css dist\\css\\styles.css",
+    "w_cp": "mkdir dist\\css && copy src\\index.html dist\\index.html && copy src\\css\\styles.css dist\\css\\styles.css",
+    "dev": "webpack && npm run start",
+    "watch": "webpack --watch"
   },
   "author": "",
   "license": "ISC"
