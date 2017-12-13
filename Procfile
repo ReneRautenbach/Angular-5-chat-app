@@ -1,2 +1,1 @@
-web: webpack
-worker: node index.js
+web: webpack && node server.js
