@@ -3,19 +3,21 @@ const http = require('http');
 const url = require('url');
 const websocket = require(__dirname + '/websocket') 
 const path = require('path');
+import compression from 'compression';
 
-const DIST_DIR = path.join(__dirname,'dist');
-const PORT = 3000;
+const DIST_DIR = path.join(__dirname,'public');
+const port = process.env.PORT || 3000;
 const app = express();
     
-app.use(express.static(DIST_DIR))   
+app.use(express.static(DIST_DIR)) 
+app.use(compression());   
  
 app.get('/', function(req, res) { 
   res.sendFile (path.join(DIST_DIR, "index.html"));
 });  
 
 const server = http.createServer(app);
-server.listen(PORT, function listening() {
+server.listen(port, function listening() {
   console.log('Listening on %d', server.address().port); 
   websocket(server); 
 });

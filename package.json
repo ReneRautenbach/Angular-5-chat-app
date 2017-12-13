@@ -17,8 +17,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "l_cp": "mkdir dist\\css && cp src\\index.html dist\\index.html && cp src\\css\\styles.css dist\\css\\styles.css",
-    "w_cp": "mkdir dist\\css && copy src\\index.html dist\\index.html && copy src\\css\\styles.css dist\\css\\styles.css",
+    "l_cp": "mkdir public\\css && cp src\\index.html public\\index.html && cp src\\css\\styles.css public\\css\\styles.css",
+    "w_cp": "mkdir public\\css && copy src\\index.html public\\index.html && copy src\\css\\styles.css public\\css\\styles.css",
     "dev": "webpack && npm run start",
     "watch": "webpack --watch"
   },
