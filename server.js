@@ -5,7 +5,7 @@ const websocket = require(__dirname + '/websocket')
 const path = require('path'); 
 
 const DIST_DIR = path.join(__dirname,'public');
-const PORT = 3000;
+const PORT = process.env.PORT || 5000;
 const app = express();
     
 app.use(express.static(DIST_DIR))  
