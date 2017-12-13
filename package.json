@@ -1,8 +1,8 @@
 {
-  "name": "talk2me_node",
+  "name": "node-js-getting-started",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.16.2",
     "ws": "^3.3.2"
@@ -22,6 +22,6 @@
     "dev": "webpack && npm run start",
     "watch": "webpack --watch"
   },
-  "author": "",
+  "author": "Rene Rautenbach",
   "license": "ISC"
 }
