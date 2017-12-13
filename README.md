@@ -4,6 +4,9 @@
 
 This is a demo app that allows a user to sign in and enter a chat room.  
 
+# Demo
+
+[Chat Demo](https://thawing-scrubland-83183.herokuapp.com/)
 
 # Uses
 
