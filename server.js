@@ -16,6 +16,6 @@ app.get('/', function(req, res) {
 
 const server = http.createServer(app);
 server.listen(PORT, function listening() {
-  console.log('Listening on %d', server.address().PORT); 
+  console.log('Listening on %d', PORT); 
   websocket(server); 
 }); 
