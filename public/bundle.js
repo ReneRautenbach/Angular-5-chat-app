@@ -455,7 +455,9 @@ var SocketClient = function () {
     return SocketClient;
 }();
 
-var wsc = exports.wsc = new SocketClient('ws://localhost:3000');
+var HOST = location.origin.replace(/^http/, 'ws');
+console.log(HOST);
+var wsc = exports.wsc = new SocketClient(HOST);
 
 /***/ },
 /* 4 */
