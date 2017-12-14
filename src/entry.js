@@ -16,6 +16,8 @@ let btnDisconnect = document.querySelector('#btnDisconnect');
 
 // connect to websocket and setHandle
 btnConnect.onclick = () => { 
+    
+    screenSelector.emit('connecting');
     console.log(WebSocketClient);  
 
     let handle  = document.querySelector('#handle').value;
@@ -23,15 +25,19 @@ btnConnect.onclick = () => {
     WebSocketClient.connect();
   };
  
-btnDisconnect.onclick = () => {   
+btnDisconnect.onclick = () => {  
+    screenSelector.emit('connecting');  
     WebSocketClient.disconnect();
 };
 
-btnExitRoom.onclick = () => {   
+btnExitRoom.onclick = () => { 
+    
+    screenSelector.emit('connecting');  
     WebSocketClient.exitRoom();
 }
 
-btnSay.onclick = () => {   
+btnSay.onclick = () => { 
+      
     let message  = document.querySelector('#chatText').value;
     
     if(message>'') { 

@@ -8,8 +8,8 @@ class SocketClient {
         this.Uri = wsUri
     }
 
-    connect() {
-
+    connect() { 
+        
         //Open a WebSocket connection. 
         this.ws = new WebSocket(this.Uri);
 

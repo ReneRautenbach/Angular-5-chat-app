@@ -795,6 +795,8 @@ var btnDisconnect = document.querySelector('#btnDisconnect');
 
 // connect to websocket and setHandle
 btnConnect.onclick = function () {
+
+    _screenSelector.screenSelector.emit('connecting');
     console.log(WebSocketClient);
 
     var handle = document.querySelector('#handle').value;
@@ -803,14 +805,18 @@ btnConnect.onclick = function () {
 };
 
 btnDisconnect.onclick = function () {
+    _screenSelector.screenSelector.emit('connecting');
     WebSocketClient.disconnect();
 };
 
 btnExitRoom.onclick = function () {
+
+    _screenSelector.screenSelector.emit('connecting');
     WebSocketClient.exitRoom();
 };
 
 btnSay.onclick = function () {
+
     var message = document.querySelector('#chatText').value;
 
     if (message > '') {
