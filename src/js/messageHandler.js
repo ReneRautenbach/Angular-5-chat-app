@@ -2,12 +2,10 @@ import { notifications } from "./notifications";
 import { screenSelector } from './screenSelector';
 import { wsc } from "./socketClient";
 
-const EventEmitter = require('events');
-
+const EventEmitter = require('events'); 
 let WebSocketClient = wsc;
 
-class MessageHandler extends EventEmitter {
-
+class MessageHandler extends EventEmitter { 
 
     constructor() {
         super();
